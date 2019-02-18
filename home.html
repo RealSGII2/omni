@@ -11,9 +11,76 @@
     <title>OmniTM</title>
 
     <style>
+
+    .imga {
+      /* Start the shake animation and make the animation last for 0.5 seconds */
+      animation: shake 0.7s;
+
+      /* When the animation is finished, start again */
+      animation-iteration-count: infinite;
+    }
+
+    .imgb {
+      /* Start the shake animation and make the animation last for 0.5 seconds */
+      animation: shake2 0.7s;
+
+      /* When the animation is finished, start again */
+      animation-iteration-count: infinite;
+    }
+
+    .imgc {
+      /* Start the shake animation and make the animation last for 0.5 seconds */
+      animation: shake3 0.7s;
+
+      /* When the animation is finished, start again */
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-2px, 3px) rotate(-1deg); }
+      20% { transform: translate(1px, 4px) rotate(1deg); }
+      30% { transform: translate(-3px, 2px) rotate(0deg); }
+      40% { transform: translate(-1px, 3px) rotate(1deg); }
+      50% { transform: translate(1px, 3px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(-3px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, 4px) rotate(-1deg); }
+    }
+
+    @keyframes shake2 {
+      0% { transform: translate(-1px, 1px) rotate(-1deg); }
+      10% { transform: translate(1px, -2px) rotate(0deg); }
+      20% { transform: translate(3px, -0px) rotate(1deg); }
+      30% { transform: translate(-3px, 2px) rotate(-1deg); }
+      40% { transform: translate(-1px, 1px) rotate(1deg); }
+      50% { transform: translate(1px, 2px) rotate(0deg); }
+      60% { transform: translate(-3px, -1px) rotate(1deg); }
+      70% { transform: translate(-3px, -1px) rotate(1deg); }
+      80% { transform: translate(1px, -1px) rotate(-1deg); }
+      90% { transform: translate(1px, -2px) rotate(0deg); }
+      100% { transform: translate(1px, 2px) rotate(-1deg); }
+    }
+
+    @keyframes shake3 {
+      0% { transform: translate(1px, 1px) rotate(1deg); }
+      10% { transform: translate(-1px, -2px) rotate(2deg); }
+      20% { transform: translate(-3px, 0px) rotate(-1deg); }
+      30% { transform: translate(3px, 2px) rotate(1deg); }
+      40% { transform: translate(1px, -1px) rotate(2deg); }
+      50% { transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-2deg); }
+      80% { transform: translate(-1px, -1px) rotate(-1deg); }
+      90% { transform: translate(1px, 2px) rotate(1deg); }
+      100% { transform: translate(1px, -2px) rotate(2deg); }
+    }
+
     .sidenav {
       height: 100%;
-      width: 33%;
+      width: 23%;
       position: fixed;
       z-index: 1;
       top: 0;
@@ -23,22 +90,127 @@
       padding-top: 20px;
     }
 
+    .main {
+      margin-left: 23%; /* Same as the width of the sidenav */
+    }
+
     </style>
   </head>
-  <body>
+  <body class='bg-dark text-light'>
 
-        
+
     <div class="sidenav text-center text-light">
-     <h1>OmniTM</h1>
-     <input type="button" class="btn btn-lg btn-light btn-block" value='Donate' href=''>
+        <div class="container">
+         <img src='https://cdn.discordapp.com/attachments/496864200425996308/546931877848547349/822e7272-5629-4b54-890e-b6c0ed273cd8.png' style='position: relative; height: 7vw' ><h1>
+           <p></p>
+         <input type="button" class="btn btn-lg btn-primary btn-border btn-block" value='Invite' href='/omni/invite'>
+         <input type="button" class="imgb btn btn-lg btn-success btn-block" value='Donate' href='/omni/help'>
+         <input type="button" class="btn btn-sm btn-outline-light btn-block" value='Perks' href='/omni/help/perks'>
+         <input type="button" class="btn btn-sm btn-outline-light btn-block" value='Report bug' href='/omni/help/report'>
+         <p></p><p></p><p></p>
+         <h3>Pages</h3>
+         <input type="button" class="btn btn-outline-light btn-block" value='Home' href='/omni/home'>
+         <input type="button" class="btn btn-outline-light btn-block" value='Features' href='/omni/h/features'>
+         <input type="button" class="btn btn-outline-light btn-block" value='Support' href='/omni/redirect/aertrio/support'>
+         <input type="button" class="btn btn-outline-primary btn-block" value='Premium' href='/omni/redirect/aertrio/premium'>
+
+         <p style='position: absolute; top: 94%' class='text-center'>Made by SGII2</p>
+       </div>
     </div>
-        
-        
-        
-        
-        
-        
-        
+
+    <div class='main'>
+      <!--<input type="button" class="btn btn-light" value='Home' href='' style='z-index: 3; position: absolute; top: 10px; right: 10px;'> -->
+      <div class='container text-center'>
+      </div>
+
+      <p></p>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <img src='https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2018-01-11/297387706245_85899a44216ce1604c93_512.jpg' alt='' class='imga rounded' style='width:15vw; height:15vw;'>
+          </div>
+          <div class="col-sm">
+            <img src='https://cdn.discordapp.com/attachments/496864200425996308/546943017827958784/1OoXboCzk0gYvTNwNnV4S9A2x.png' alt='' class='imgb' style='width:15vw; height:15vw;'>
+          </div>
+          <div class="col-sm">
+            <img src='https://cdn.discordapp.com/icons/489624363877007360/78c24f3d6ea30e752fe40a2d073763a8.jpg' alt='' class='imgc rounded' style='width:15vw; height:15vw;'>
+          </div>
+        </div>
+      </div>
+
+      <p></p>
+
+      <div class='container'>
+        <h2>OmniTM is a multipuropse and unique bot that allows any owner of it to request any of its features changed. This is stared in servers like Global Emote Hunters.</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="card" style="">
+                <img src="https://cdn.discordapp.com/attachments/357406786736881677/546937512338259978/unknown.png" class="card-img-top" alt="...">
+                <div class="card-body bg-dark">
+                  <h5 class="card-title">Search commands</h5>
+                  <p class="card-text">Search things on the internet with just a single command!</p>
+                  <p class='text-muted'>Urban: Urban Dictionary</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card" style="">
+                <img src="https://cdn.discordapp.com/attachments/496864200425996308/546939486244831232/unknown.png" class="card-img-top" alt="...">
+                <div class="card-body bg-dark">
+                  <h5 class="card-title">Fun games</h5>
+                  <p class="card-text">Loads of games including counting and one word story.</p>
+                  <p class='text-muted'>One word story.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card" style="">
+                <img src="https://cdn.discordapp.com/attachments/496864200425996308/546940122155974657/unknown.png" class="card-img-top" alt="...">
+                <div class="card-body bg-dark">
+                  <h5 class="card-title">Suggestion systems</h5>
+                  <p class="card-text">Allow anyone to suggestion, and approve, comment on, and deny them. Also allows reactions/ voting.</p>
+                  <p class='text-muted'>Suggestions list channel.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p></p>
+
+          <div class="card" style="">
+              <div class="card-body bg-dark">
+              <h5 class="card-title">And, there's more too!</h5>
+              <p class="card-text">You can view all features here:</p>
+              <input type="button" class="btn btn-light" value='Features' href=''>
+            </div>
+          </div>
+
+          <p></p>
+
+          <div class="card" style="">
+              <div class="card-body text-dark">
+              <h5 class="card-title">But</h5>
+              <p class="card-text">Omni is having hosting problems! We need YOUR HELP to fix it.</p>
+              <h5>Donations are REALLY needed to get us a new hosting source.</h5>
+              <input type="button" class="imga btn btn-lg btn-success btn-block" value='Donate' href=''> <p></p>
+              <input type="button" class="btn btn-outline-secondary btn-block" value='Perks' href=''>
+            </div>
+          </div>
+
+
+        </div> <p></p>
+        <img src='https://cdn.discordapp.com/attachments/496864200425996308/546931877848547349/822e7272-5629-4b54-890e-b6c0ed273cd8.png' style='position: relative; height: 7vw' ><h1>
+
+      </div>
+    </div>
+
+
+
+
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
